@@ -1,0 +1,6 @@
+﻿CREATE TYPE [dbo].[CT_Detail] AS TABLE
+(
+	ProduitId INT NOT NULL UNIQUE,
+	Quantite INT NOT NULL,
+	Prix FLOAT NOT NULL
+);

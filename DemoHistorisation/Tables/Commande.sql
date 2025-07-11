@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Commande]
+(
+	[Id] INT NOT NULL IDENTITY,
+	[Date] DATETIME2 NOT NULL
+		CONSTRAINT DF_Commande_Date DEFAULT (SYSDATETIME()), 
+    CONSTRAINT [PK_Commande] PRIMARY KEY ([Id]),
+)
